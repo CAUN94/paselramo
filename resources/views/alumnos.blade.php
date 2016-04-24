@@ -13,7 +13,7 @@
 
 
  <table class="table table-striped">
- <tr> <td>Nombre</td><td>Universidad</td><td>Carrera</td><td>Ramo</td><td>Mail</td><td>Telefono</td><td>Borrar</td></tr>
+ <tr> <td>Nombre</td><td>Universidad</td><td>Carrera</td><td>Ramo</td><td>horario</td><td>Mail</td><td>Telefono</td><td>Borrar</td></tr>
 
 
 @foreach($Curso as $C)
@@ -26,6 +26,7 @@
  <td>{{$C->Uni->Nombre}}</td>
  <td>{{$C->carrera}}</td>
  <td>{{$C->curso}}</td>
+ <td>{{$C->horario}}<td>
  <td>{{$ins->Mail}}</td>
  <td>{{$ins->Telefono}}</td>
  <td><a class="btn btn-danger" href="/admin/alumnos/borrar/{{$ins->id}}" role="button">Borrar</a></td>

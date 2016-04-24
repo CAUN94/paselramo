@@ -35,7 +35,7 @@ class AdminController extends Controller
     public function AlumnosMostrar($estado)
     {
 
-        $Inscrito = Inscrito::where('Solicitud', $estado)->orderBy('curso_id', 'desc')->get();
+        $Inscrito = Inscrito::where('Solicitud', $estado)->orderBy('curso_id', 'desc')->orderBy('horario')->get();
         $Uni=Uni::all();
         $Curso=Curso::all();
 
