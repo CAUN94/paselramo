@@ -81,7 +81,6 @@ class CursoController extends Controller
     $headers .= "Reply-To: paselramo@gmail.com ";    
     mail($to,$email_subject,$email_body,$headers);
 
-    window.open("http://www.laravel.com", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=500,left=500,width=400, height=400");
 
     return redirect()->action('UniversitysController@show',[$Uni->id."#about"]);
 	}
